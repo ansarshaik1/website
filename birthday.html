@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- saved from url=(0098)file:///C:/Users/MS%20Ansar/Downloads/CSS%20Envelope%20+%20Letter%20(Open_Close%20on%20Click).html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./birthday_files/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper flap">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong> happy birthday Arshu</strong>
+                        <p>
+                            Thinking of you always brings a smile to my face. Your laughter is infectious, and your kindness is truly remarkable. I'd love to get to know you better. Coffee or a walk sometime? Let me know!
+
+Take care, 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+
+</body></html>
